@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root, input , button {
+    --primary-color: #9871f3;
+    --secondary-color: #6c757d;
+    --background-dark-color: #10121A;
+    --background-dark-grey: #191D24;
+    --border-color: #21252C;
+    --background-light-color: #F1F1F1;
+    --background-light-color-2: rgba(3, 127, 255, 0.3);
+    --white-color: #FFF;
+    --font-light-color: #e1e1e1;
+    --font-light-color-2: #c1c1c1;
+    --font-dark-color: #313131;
+    --font-dark-color-2: #151515;
+    --sidebar-dark-color: #191D2B;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: url("https://raw.githubusercontent.com/maykbrito/my-public-files/main/nlw-19/bg.jpg") no-repeat center/cover;
+    min-height: 100vh;
+    color: var(--font-light-color);
+    display: grid;
+    place-items: center;
+    padding: 2rem 1rem;
+}
+
+header {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;    
+}
+
+h1{
+    text-align: center;
+    font-family: 'Oxanium', cursive;
+    font-size: 2.5rem;
+    line-height: 100%;
+}
+
+h1 div {
+    color: #6F9DE2;
+}
+
+main {
+    display: grid;
+    gap: 1.25rem;
+    max-width: 400px;
+}
+
+section{
+    padding: 1.25rem;
+    background: var(--background-dark-grey);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: 'Oxanium', cursive;
+    font-size: 1.25rem;
+    line-height: 100%;
+    color: var(--white-color);
+}
+
+.badge {
+    font-size: 0.75rem;
+    line-height: 160%;
+    font-weight: 600;
+    color: var(--primary-color);
+
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+}
+
+.badge::before {
+    content: '';
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background: url("https://raw.githubusercontent.com/maykbrito/my-public-files/main/nlw-19/radio.svg") no-repeat center;
+}
+
+p{
+    font-size: 0.875rem;
+    line-height: 160%;
+    color: var(--font-light-color-2);
+}
+
+.registration h2{
+    margin-bottom: 1.5rem;
+}
+
+form{
+    display: grid;
+    gap:1.5rem;
+}
+
+input{
+    font-size: 0.9rem;
+    color: var(--font-light-color-2);
+    background: var(--background-dark-grey);
+    border: 1px solid var(--border-color);
+}
+
+input::placeholder{
+    line-height: 160%;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+}
+
+.input-group input {
+    margin-left: 0.5rem;
+    padding: 0.3rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.input-group input:focus-within {
+    outline: 2px solid var(--primary-color);
+}
+
+label[for="link"]{
+    display: flex;
+    width: 100%;
+}
+
+#link {
+    border-radius: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+button {
+    font-size: 0.9rem;
+    background-color: var(--border-color);
+    color: var(--white-color);
+    /* desativar estilo de botao padrao */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    outline: none;
+    line-height: 160%;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: var(--background-dark-grey) 1px solid; 
+}
+
+button:hover {
+    background: var(--background-light-color-2);
+    border-color: var(--background-dark-grey);
+    transition: background 0.1s ease;
+}
+
+
+.page-invite{
+    text-align: center;
+}
+
+h3 {
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.status {
+    display: grid;
+    gap: 0.3rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.status::before{
+    top: 0.5rem;
+    left: 0.5rem;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("https://raw.githubusercontent.com/maykbrito/my-public-files/main/nlw-19/verify.svg") no-repeat;
+    position: absolute;
+}
+
+h4{
+    font-family: 'Oxanium', cursive;
+    line-height: 160%;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--font-light-color);
+}
+

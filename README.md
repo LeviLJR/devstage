@@ -54,7 +54,7 @@ Follow these steps to run the project locally:
 
 And for the api, follow these steps:
  
-1.Change to the branch api:
+1. Change to the branch api:
     ```bash
     git checkout api
     ```
@@ -62,7 +62,7 @@ And for the api, follow these steps:
     ```bash
     npm i
     ```
-3.Start the docker application:
+3. Start the docker application:
     ```bash
     docker-compose up -d
     ```

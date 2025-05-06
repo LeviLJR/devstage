@@ -1,34 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevStage
 
-## Getting Started
+Welcome to the **DevStage** project! This is the web application for the DevStage platform, built during the NLW#19 event by Rocketseat.
 
-First, run the development server:
+## 🚀 Technologies
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This project was developed with the following technologies:
+
+- **React** - A JavaScript library for building user interfaces.
+- **Vite** - A fast development build tool.
+- **TailwindCSS** - A CSS framework for rapid UI development.
+- **TypeScript** - A strongly typed programming language that builds on JavaScript.
+- **Next.js** - A React framework for server-rendered applications.
+- **Biome** - A code editor that combines the best of ESLint, Prettier, and TypeScript.
+- **Orval** - A tool for generating TypeScript types and API clients from OpenAPI specifications.
+## 📂 Project Structure
+
+The project is organized as follows:
+
+```
+web/
+├── src/
+│   ├── components/   # Reusable UI components
+│   ├── assets/       # Static assets (images, icons, etc.)
+    ├── http          # api methods
+│   └── app/          # Application pages
+├── public/           # Public files
+├── package.json      # Project dependencies and scripts
+    ... config files
+└── README.md         # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Follow these steps to run the project locally:
 
-## Learn More
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/LeviLJR/devstage.git
+    cd devstage/web
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Start the development server:
+    ```bash
+    npm run dev
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Open your browser at `http://localhost:3000`.
 
-## Deploy on Vercel
+And for the api, follow these steps:
+ 
+1.Change to the branch api:
+    ```bash
+    git checkout api
+    ```
+2. Install dependencies:
+    ```bash
+    npm i
+    ```
+3.Start the docker application:
+    ```bash
+    docker-compose up -d
+    ```
+4. Generate and run SQL migration files:
+    ```bash
+    npm run db:migrate
+    ```
+5. Start the development server:
+    ```bash
+    npm run dev
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Now it should be running the application on `http://localhost:3000`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+---
+Made with 💜 by Rocketseat and the DevStage community.

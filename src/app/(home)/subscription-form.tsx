@@ -9,8 +9,8 @@ import { subscribeToEvent } from "../../http/api";
 import { useRouter, useSearchParams } from "next/navigation";
 
 const subscriptionSchema = z.object({
-	name: z.string().min(2, "Digite seu nome completo"),
-	email: z.string().email("Digite um e-mail válido"),
+	name: z.string().min(2, "Enter your full name"),
+	email: z.string().email("Please enter a valid email address"),
 });
 
 type SubscriptionSchema = z.infer<typeof subscriptionSchema>;
@@ -37,7 +37,7 @@ export function SubscriptionForm() {
 			onSubmit={handleSubmit(onSubscribe)}
 			className="flex flex-col md:w-[35vw] md:max-w-[441px] md:min-w-xs gap-6 justify-between bg-gray-700 border-gray-600 rounded-2xl border p-8"
 		>
-			<h2 className="text-xl font-heading font-semibold">Inscricao</h2>
+			<h2 className="text-xl font-heading font-semibold">Registration</h2>
 			<div className="flex flex-col gap-3">
 				<div className="space-y-2">
 					<InputRoot>
@@ -46,7 +46,7 @@ export function SubscriptionForm() {
 						</InputIcon>
 						<InputField
 							type="text"
-							placeholder="Nome completo"
+							placeholder="Full name"
 							{...register("name")}
 						/>
 					</InputRoot>
@@ -75,7 +75,7 @@ export function SubscriptionForm() {
 				</div>
 			</div>
 			<Button type="submit">
-				Confirmar
+				Confirm
 				<ArrowRight size={20} />
 			</Button>
 		</form>

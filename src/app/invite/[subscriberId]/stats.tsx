@@ -16,7 +16,7 @@ export async function Stats({subscriberId}: StatsProps) {
 					{acessCount}
 				</span>
 				<span className="text-gray-300 text-sm text-center">
-					Acessos ao link
+					Link accesses
 				</span>
 			</div>
 			<div className="w-auto relative flex flex-col items-center justify-center h-24.5 bg-gray-700 border rounded-xl border-gray-600">
@@ -25,7 +25,7 @@ export async function Stats({subscriberId}: StatsProps) {
 					{subsCount}
 				</span>
 				<span className="text-gray-300 text-sm text-center">
-				Inscrições feitas
+				Registrations made
 				</span>
 			</div>
 			<div className="w-auto relative flex flex-col items-center justify-center h-24.5 bg-gray-700 border rounded-xl border-gray-600">
@@ -34,7 +34,7 @@ export async function Stats({subscriberId}: StatsProps) {
 					{rankPosition ? `${rankPosition}°`: '-'}
 				</span>
 				<span className="text-gray-300 text-sm text-center">
-				Posição no ranking
+				Ranking position
 				</span>
 			</div>
 		</div>

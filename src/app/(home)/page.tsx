@@ -19,24 +19,23 @@ export default function Home() {
       <div className="flex flex-col gap-5 h-full items-stretch md:flex-row">
         <div className="flex-1 flex flex-col gap-6 bg-gray-700 border-gray-600 rounded-2xl border p-8">
           <div className="flex justify-between font-semibold">
-            <h2 className="text-xl font-heading">Sobre o evento</h2>
+            <h2 className="text-xl font-heading">About the event</h2>
             <span className="text-purple text-xs flex gap-2 uppercase items-center">
               <Radio size={20} />
-              ao vivo
+              live
             </span>
           </div>
           <div className="flex h-full text-sm items-center leading-relaxed md:text-base">
-            Um evento feito por e para pessoas desenvolvedoras apaixonadas por
-            criar soluções inovadoras e compartilhar conhecimento. Vamos
-            mergulhar nas tendências mais recentes em desenvolvimento de
-            software, arquitetura de sistemas e tecnologias emergentes, com
-            palestras, workshops e hackathons.
+            An event created by and for developers who are passionate about
+            creating innovative solutions and sharing knowledge. Let's dive into
+            the latest trends in software development, systems architecture, and
+            emerging technologies, with talks, workshops, and hackathons.
             <br />
             <br />
-            Dias 15 a 17 de março | Das 18h às 21h | Online & Gratuito
+            March 15 to 17 | 6 p.m. to 9 p.m. | Online & Free
           </div>
         </div>
-        <Suspense fallback={<div>Carregando...</div>}>
+        <Suspense fallback={<div>Loading...</div>}>
           <SubscriptionForm />
         </Suspense>
       </div>
